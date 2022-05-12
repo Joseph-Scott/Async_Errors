@@ -8,7 +8,7 @@ const AppError = require('./AppError');
 
 const Product = require('./models/product');
 
-mongoose.connect('mongodb://localhost:27017/farmStand2')
+mongoose.connect('mongodb://localhost:27017/farmStand2', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("MONGO CONNECTION OPEN!!!")
     })
