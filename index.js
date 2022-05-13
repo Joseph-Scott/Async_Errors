@@ -99,7 +99,7 @@ app.use((err, req, res, next) => {
 })
 
 app.use((err, req, res, next) => {
-    const { status = 500, message = 'Something went wrong' } = err;
+    const { status = 500, message = 'Something went wrong!' } = err;
     res.status(status).send(message);
 })
 
